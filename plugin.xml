@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.example.time"
+        version="0.0.1">
+
+  <name>Time</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+<asset src="www/time.js" target="js/time.js"/>
+
+  <js-module src="www/time.js" name="time">
+    <clobbers target="time" />
+  </js-module>
+
+  <platform name="ios">
+    <info>
+    </info>
+    <config-file target="config.xml" parent="/*">
+      <feature name="Time">
+        <param name="ios-package" value="Time"/>
+      </feature>
+    </config-file>
+    
+    <header-file src="src/ios/Bridging-Header.h" />
+    <source-file src="src/ios/Time.swift"/>
+  </platform>
+  
+</plugin>
