@@ -13,7 +13,7 @@ To make the plugin run; open your ios project which is under `platform/ios/<your
 
  1. Go to project settings and change deployment target to 7.0 or above( the minimum deployment target for swift language is ios 7.0).
  2. Go to **Build Settings** / **Swift Compiler - Code Generation** and add : `./<Project_Name>/Plugins/com.example.time/Bridging-Header.h` to **Objective-c Bridging Header**
- 3. Add again under **Build Settings** this `@executable_path/Frameworks` to **RunPath Search Paths**
+ 3. Add again under **Build Settings** this `@executable_path/Frameworks` to **RunPath Search Paths** 
       
 
 Test The Plugin
